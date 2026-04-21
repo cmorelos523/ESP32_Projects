@@ -3,12 +3,11 @@
 This project focuses on controlling multiple LEDs with tactile switches. There are multiple ways to do this, but I wanted this system to work in a non blocking way, meaning no delay(). To achieve this, I structured the program to work using a Finite State Machine. Each state has transitions and defines the behavior of the LEDs. Scroll down to the bottom of this document to see a live demo of the circuit.
 
 ## State Diagram
-                                    _
-Legend: L means LED (L is blinking, L is off)
-	                                             _
-	B means button (B is not pressed or logic 1, B is pressed or logic 0)
 
+Legend: L means LED (L is blinking, L with the bar on top is off)
+		B means button (B is not pressed or logic 1, B with the bar on top is pressed or logic 0)
 
+<img width="799" height="421" alt="FSM" src="https://github.com/user-attachments/assets/0ed3ebbc-d2d8-46a7-8e2b-76f6eee1cc28" />
 
 
 ## State Description
@@ -43,5 +42,5 @@ I saw online that a debouncing circuit can be done in hardware using an SR latch
 
 ## Live Demo
 
-
+https://drive.google.com/file/d/1jI8Dj5LPjdWLCo-mCJyhEIhjF5VkLQrp/view?usp=sharing
 
