@@ -10,6 +10,7 @@ I needed a way to "detect" light changes in real time so a photoresistor seemed 
 <img width="964" height="551" alt="circuit" src="https://github.com/user-attachments/assets/09c3e0bb-ae55-4fa4-8135-28ebbb27a995" />
 Figure 1. Circuit diagram
 
+
 The ESP32-S3 has 2 12 bit ADCs, each with 9 channels mapped to different GPIO pins. Using this set up, ADC 1 channel 0 (GPIO pin 1) was reading ~50 under very low brightness, ~2000 normal room light, and ~3500 when I pointed my phone's flashlight directly to it. With this information, I was able to set the desired thresholds at which the LED changed brightness.
 
 
@@ -21,6 +22,7 @@ When a certain threshold is met, the LED brightness changes for a minimum amount
 
 <img width="1920" height="809" alt="FSM" src="https://github.com/user-attachments/assets/fd75dc88-7f7c-4574-86f9-c4102174c42d" />
 Figure 2. FSM diagram
+
 
 Each state was modeled using functions. The led_low() implements state 1, led_mid() state 2, and led_high() state 3. All 3 functions handle similar behavior, each following this sequence of actions:
 - State initialization: If this is the first time entering this state, the system sets the appropriate timer configuration and lights up the LED according to the state rules.
