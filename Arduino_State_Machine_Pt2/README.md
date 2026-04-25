@@ -22,8 +22,9 @@ When a certain threshold is met, the LED brightness changes for a minimum amount
 
 <img width="1920" height="809" alt="FSM" src="https://github.com/user-attachments/assets/fd75dc88-7f7c-4574-86f9-c4102174c42d" />
 Figure 2. FSM diagram
-\
-\
+
+
+
 Each state was modeled using functions. The led_low() implements state 1, led_mid() state 2, and led_high() state 3. All 3 functions handle similar behavior, each following this sequence of actions:
 - State initialization: If this is the first time entering this state, the system sets the appropriate timer configuration and lights up the LED according to the state rules.
   - State 1 (low brightness): Timer reset and updated to measure 1 second. PWM duty cycle set to 10%.
