@@ -6,3 +6,6 @@ This repo will hold projects I find interesting using the ESP32 S3 Development b
 
 ### Arduino State Machine
 This project uses a Moore state machine to handle button presses and LEDs.
+
+### Arduino State Machine Pt.2
+This project uses a Moore state machine to adjust the brightness of an LED based on different light conditions.

@@ -21,10 +21,10 @@ Initial state, here, both LEDs blink every 500ms. If **Button 1** is pressed, we
 ### State 2 (S2)
 In this state **LED 1** is off and **LED 2** is blinking. If **Button 1** is pressed again we transition back to S1 where both LEDs are flashing. If **Button 2** is pressed however, both LEDs will be off.
 
-## State 3 (S3)
+### State 3 (S3)
 This state is the opposite of S2, **LED 1** is blinking while **LED 2** is off. If **Button 2** is pressed again we transition back to S1 where both LEDs are flashing. If **Button 1** is pressed however, both LEDs will be off.
 
-## State 4 (S4)
+### State 4 (S4)
 In this state both LEDs are off. If **Button 1** is pressed, we transition back to S3 where **LED 1** is blinking while **LED 2** is off. If **Button 2** is pressed, we transition back to S2 where **LED 1** is off and **LED 2** is blinking.
 
 
